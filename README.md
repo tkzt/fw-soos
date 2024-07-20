@@ -1,0 +1,1 @@
+This is a slide for Codekitchen Community SOOS Sprint 5.
