@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -10,10 +10,10 @@ dependencies:
     version: 0.49.17(@types/markdown-it@14.1.1)(postcss@8.4.39)
   '@slidev/theme-default':
     specifier: latest
-    version: 0.25.0
+    version: 0.21.2
   '@slidev/theme-seriph':
     specifier: latest
-    version: 0.25.0
+    version: 0.21.3
   vue:
     specifier: ^3.4.32
     version: 3.4.33(typescript@5.5.3)
@@ -1230,27 +1230,29 @@ packages:
       roughjs: 4.6.6
     dev: false
 
-  /@slidev/theme-default@0.25.0:
-    resolution: {integrity: sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw==}
-    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
+  /@slidev/theme-default@0.21.2:
+    resolution: {integrity: sha512-neUucFs2YrRZZd73QwvLTyRG/o1nerDFUR5t8YAmXVLTMzWfY71flQ6aAhjYf+WjsozYsOHcxi/pZtIzZ4VhTQ==}
+    engines: {node: '>=14.0.0', slidev: '>=0.19.2'}
     dependencies:
-      '@slidev/types': 0.47.5
+      '@slidev/types': 0.22.7
       codemirror-theme-vars: 0.1.2
       prism-theme-vars: 0.2.5
+      theme-vitesse: 0.1.14
     dev: false
 
-  /@slidev/theme-seriph@0.25.0:
-    resolution: {integrity: sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ==}
-    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
+  /@slidev/theme-seriph@0.21.3:
+    resolution: {integrity: sha512-cLya6O4hmcLHUhloCMPPoKMLX27Q+8M8pRS82BSsLXVeXTXrlpc3l3glx5VB738p+NQr7FgqFN6H2CXQRoVv9Q==}
+    engines: {node: '>=14.0.0', slidev: '>=0.19.3'}
     dependencies:
-      '@slidev/types': 0.47.5
+      '@slidev/types': 0.22.7
       codemirror-theme-vars: 0.1.2
       prism-theme-vars: 0.2.5
+      theme-vitesse: 0.1.14
     dev: false
 
-  /@slidev/types@0.47.5:
-    resolution: {integrity: sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A==}
-    engines: {node: '>=18.0.0'}
+  /@slidev/types@0.22.7:
+    resolution: {integrity: sha512-mCVKQbcGTv6d6n9aHpYNp5U04HF+FMbpY083vqpJ6Folc805BB1Am02eubaW0J6nM+dSOu2dDgPY+kIjs75sAQ==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@slidev/types@0.49.17(postcss@8.4.39)(typescript@5.5.3)(vite@5.3.4):
@@ -4837,6 +4839,11 @@ packages:
       yallist: 4.0.0
     dev: false
     optional: true
+
+  /theme-vitesse@0.1.14:
+    resolution: {integrity: sha512-b5s+Zpfaw5+djoCJ9AEbcTbpiTlLsOvGM9oblDmmWRGWNqg9oXtEYO/uwubwx77novHBI6zNuwZRHKNlAIBo4A==}
+    engines: {vscode: ^1.43.0}
+    dev: false
 
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}

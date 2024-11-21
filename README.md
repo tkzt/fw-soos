@@ -1,1 +1,1 @@
-This is a slide for Codekitchen Community SOOS Sprint 5.
+This is a REPO for slides of [Codekitchen Community SOOS](https://codekitchen.community/t/topic/1095).

@@ -20,7 +20,7 @@ mdc: true
 
 # Fine Weather
 
-代码厨房开源松 Sprint 5
+代码厨房开源松 Sprint 6
 
 By Allen @tkzt
 
@@ -55,17 +55,15 @@ transition: fade-out
 
 <v-clicks>
 
-<div class="absolute top-0 right-0 h-full flex items-center justify-center w-60%">
-<img src="https://images.tkzt.cn/blog/fwg-image-card.gif"/>
+<div class="absolute top-0 right-0 h-full flex items-center justify-center w-full">
+<img src="https://images.tkzt.cn/blog/fwg-image-card.gif" class="rounded-lg shadow-2xl"/>
 </div>
 
-<div class="absolute top-0 right-0 h-full flex items-center justify-center w-60%">
-<img src="https://images.tkzt.cn/blog/fwg-blurha-intro.png" />
+<div class="absolute top-0 right-0 h-full flex items-center justify-center w-full">
+<img src="https://images.tkzt.cn/blog/fwg-blurha-intro.png" class="rounded-lg shadow-2xl w-94%"/>
 </div>
 
-<div class="absolute top-0 right-0 h-full flex items-center justify-center w-60%">
-<img src="/assets/Snipaste_2024-07-20_20-36-07.jpg" />
-</div>
+<ManagerClickJump />
 
 </v-clicks>
 
@@ -90,15 +88,15 @@ transition: fade-out
 <v-clicks>
 
 <div class="absolute top-50% left-50% translate--50%">
-<img src="/assets/WX20240719-223517@2x.png"/>
+<img src="/assets/WX20240719-223517@2x.png" class="rounded-lg shadow-2xl"/>
 </div>
 
 <div class="absolute top-50% left-50% translate--50%">
-<img src="/assets/WX20240719-223630@2x.png" />
+<img src="/assets/WX20240719-223630@2x.png" class="rounded-lg shadow-2xl"/>
 </div>
 
 <div class="absolute top-50% left-50% translate--50%">
-<img src="/assets/WX20240719-223255@2x.png" />
+<img src="/assets/WX20240719-223255@2x.png" class="rounded-lg shadow-2xl"/>
 </div>
 
 </v-clicks>
@@ -122,15 +120,47 @@ transition: fade-out
 
 # 任务
 
-<div class="absolute flex justify-center top-50% left-50% translate--50%">
+<div class="w-full absolute flex justify-center top-50% left-50% translate--50%">
 
-- 详情模式增加翻页（Load More）<span class="inline-block py-.1 px-1 rounded-xl bg-green-100 text-xs text-gray-700">简单</span>
-- 基于 [PythonAnywhere](https://www.pythonanywhere.com/) 和 [GitHub Pages](https://docs.github.com/zh/pages/getting-started-with-github-pages) 部署一个社区版 **Fine Weather** <span class="inline-block py-.1 px-1 rounded-xl bg-yellow-100 text-xs text-gray-700">中等</span>
-  - 前者参考 [这里](https://github.com/tkzt/emoji-reaction/blob/main/.github/workflows/cd.yml)
-  - 后者参考 [这里](https://tutorial.helloflask.com/deploy/)
-- 添加 `Emoji Reaction` 组件，并可配置启用与否 <span class="inline-block py-.1 px-1 rounded-xl bg-yellow-100 text-xs text-gray-700">中等</span>
-  - 需要在后台添加 Reaction 新增、删除、查看 相关接口
-  - 具体可以参考 [这里](https://github.com/tkzt/fine-weather-gallery/blob/main/src/components/FineWeatherGalleryView.vue)
+<v-switch>
+<template #1>
+
+- 相册程序
+  - <TaskNo>1</TaskNo> 设定没有照片时的展示状态 <LevelBadge />
+  - <TaskNo>2</TaskNo> 图片详情页面没有地点和时间时隐藏对应的图标 <LevelBadge />
+
+</template>
+<template #2>
+
+- 后台管理
+  - <TaskNo>3</TaskNo> 添加相册设置页面 <LevelBadge />
+    - <TaskNo>4</TaskNo> 支持自定义首页介绍和标题 <LevelBadge />
+    - <TaskNo>5</TaskNo> 支持自定义页面标题 <LevelBadge />
+    - <TaskNo>6</TaskNo> 支持自定义图片无描述的展示信息 <LevelBadge />
+    - <TaskNo>7</TaskNo> 支持设置不同颜色主题 <LevelBadge level="m"/>
+  - <TaskNo>8</TaskNo> 优化图片上传表单 <LevelBadge />
+    - 每行显示一个输入框
+    - 描述使用多行输入框
+    - 时间选择使用标准组件
+  - <TaskNo>9</TaskNo> 用户管理 <LevelBadge />
+    - <TaskNo>10</TaskNo> 用户管理页面
+    - <TaskNo>11</TaskNo> 用户注册和批准（激活）
+    - <TaskNo>12</TaskNo> 用户权限控制 <LevelBadge level="m"/>
+
+</template>
+<template #3>
+
+- 文档
+  - <TaskNo>13</TaskNo> 添加文档框架 <LevelBadge level="m"/>
+  - 创建文档
+    - <TaskNo>14</TaskNo> 中文部署文档 <LevelBadge />
+    - 英文部署文档
+    - <TaskNo>15</TaskNo> 中文使用文档 <LevelBadge />
+    - 英文使用文档
+    - <TaskNo>16</TaskNo> 创建设计文档（架构图）<LevelBadge level="m"/>
+
+</template>
+</v-switch>
 
 </div>
 
